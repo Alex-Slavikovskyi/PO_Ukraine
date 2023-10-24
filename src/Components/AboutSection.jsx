@@ -11,7 +11,6 @@ export const AboutSection = () => {
     setBtnActive(newColor);
   }
   
-
   return (
     <Container className='flex pt-[93px] justify-between items-center'>
       <div className='h-[340px] w-[340px] lg:h-[480px] lg:w-[480px]'>
