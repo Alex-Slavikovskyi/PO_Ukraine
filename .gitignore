@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+
+# Транспилированный код JavaScript
+dist/
+build/
+*.js
+
+# Локальные конфигурационные файлы
+.env
+
+# Локальные базы данных
+db.sqlite
+
+# Кэш и временные файлы
+.cache/
+.tmp/
+
+# Логи и отчеты об ошибках
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Зависимости проекта
+package-lock.json
+yarn.lock
