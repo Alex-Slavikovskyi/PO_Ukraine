@@ -19,7 +19,9 @@ export const Header = () => {
     setButtonData(updatedData);
   }
   return (
-    <Container className='flex items-center justify-between text-xs lg:text-sm'>
+    <Container >
+<div className='flex items-center justify-between text-xs lg:text-sm'>
+
 
       <Link to="/" className='w-[90px] lg:w-[120px] hover:cursor-pointer flex items-center'>
         <img src='./img/logo_ukr.svg' />
@@ -42,7 +44,7 @@ export const Header = () => {
         <p className='pr-2.5'>UKR</p>
         <img src='./img/Vector_language.svg' />
       </div>
-
+</div>
     </Container>
   )
 }

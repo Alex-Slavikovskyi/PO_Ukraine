@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export const BtnHeader = ({ text, onClick, btnActive, idHeader}) => {
+export const BtnHeader = ({ text, onClick, btnActive, idHeader }) => {
 
-  console.log(idHeader);
   return (
     <Link to={`#${idHeader}`}>
       <button

@@ -5,7 +5,7 @@ export const Container = ({ children, className }) => {
     <div
       className={
         className +
-        ` px-[24px] lg:px-[46px]`
+        ` px-[24px] lg:px-[46px] xl:w-[1220px] lg:mx-auto`
       }
     >
       {children}
