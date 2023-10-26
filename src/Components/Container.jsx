@@ -1,8 +1,9 @@
 import React from 'react'
 
-export const Container = ({ children, className }) => {
+export const Container = ({ children, className, id }) => {
   return (
-    <div
+    <div 
+      id={id}
       className={
         className +
         ` px-[24px] lg:px-[46px] xl:w-[1220px] lg:mx-auto`

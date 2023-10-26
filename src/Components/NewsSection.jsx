@@ -6,8 +6,8 @@ import { ShowMore } from '../UI/ShowMore'
 
 export const NewsSection = () => {
   return (
-    <Container className="pt-[80px] lg:pt-[140px]">
-      <h2 className='font-bold text-[22px] lg:text-[32px] text-[#0C5AB5] font-Merriweather'>Новини на події</h2>
+    <Container id='news' className="pt-[80px] lg:pt-[140px]">
+      <h2  className='font-bold text-[22px] lg:text-[32px] text-[#0C5AB5] font-Merriweather'>Новини на події</h2>
 
       <div className='flex justify-between items-end'>
         <p className='pt-3 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </p>

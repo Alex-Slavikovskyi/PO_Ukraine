@@ -4,6 +4,8 @@ import { AboutSection } from '../Components/AboutSection'
 import { WorkSection } from '../Components/WorkSection'
 import { NewsSection } from '../Components/NewsSection'
 import { SupportSection } from '../Components/SupportSection'
+import { PartnersSection } from '../Components/PartnersSection'
+import { Footer } from '../Components/Footer'
 
 export const HomePage = () => {
   return (
@@ -13,6 +15,8 @@ export const HomePage = () => {
       <WorkSection/>
       <NewsSection/>
       <SupportSection/>
+      <PartnersSection />
+      <Footer />
     </>
   )
 }

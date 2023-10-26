@@ -5,7 +5,7 @@ import { dataCardWork } from '../data/dataCardWork';
 
 export const WorkSection = () => {
   return (
-    <Container className="pt-[80px] lg:pt-[140px]">
+    <Container id="work" className="pt-[80px] lg:pt-[140px]">
       <div className='w-[534px]'>
         <h2 className='font-bold text-[22px] lg:text-[32px] text-[#0C5AB5] font-Merriweather'>Напрямки роботи</h2>
         <p className='pt-3 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>

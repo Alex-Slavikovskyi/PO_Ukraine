@@ -17,4 +17,5 @@
 
 body,html {
 margin: 0 auto;
+scroll-behavior: smooth;
 }
