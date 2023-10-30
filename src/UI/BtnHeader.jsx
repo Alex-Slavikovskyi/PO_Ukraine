@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-export const BtnHeader = ({ text, onClick, btnActive, idHeader }) => {
+export const BtnHeader = ({ text, onClick, isActive, idHeader }) => {
 
   return (
-    <Link to={`#${idHeader}`}>
-      <button
-        className="py-1 lg:p-2.5"
-        style={{ color: btnActive }}
+    <a href={idHeader}>
+    <button
+        className={`py-1 lg:p-2.5 ${isActive ? ' text-[#0C5AB5]' : ''}`}
         onClick={onClick}>
         {text}
       </button>
-    </Link>
+    </a>
   )
 }

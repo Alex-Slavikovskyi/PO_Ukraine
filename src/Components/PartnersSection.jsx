@@ -3,7 +3,7 @@ import { Container } from './Container'
 
 export const PartnersSection = () => {
   return (
-    <Container className="pb-[164px] pt-[80px] lg:pt-[140px]">
+    <Container id='partners' className="pb-[164px] pt-[80px] lg:pt-[140px]">
       <div className='w-[521px] lg:w-[533px]'>
         <h2 className='font-bold text-[22px] lg:text-[32px] text-[#0C5AB5] font-Merriweather'>Наші партнери</h2>
         <p className='pt-3 text-xs lg:text-sm leading-5 lg:leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>

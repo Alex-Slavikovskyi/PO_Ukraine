@@ -21,7 +21,7 @@ export const Footer = () => {
         </Link>
 
         <div className='w-[141px] lg:w-[202px] '>
-          <h3 className='font-bold text-base  lg:text-xl pt-6'>Корисні посилання</h3>
+          <h3 className='font-bold text-sm  lg:text-xl pt-6'>Корисні посилання</h3>
           <div className='flex flex-col text-xs leading-4 lg:text-sm lg:leading-5 pt-4'>
             {
               dataUsefulLinks && dataUsefulLinks.map(linkElem => (
@@ -32,7 +32,7 @@ export const Footer = () => {
         </div>
 
         <div className=' w-[264px] lg:w-[305px]'>
-          <h3 className='font-bold text-base  lg:text-xl pt-6'>Контакти</h3>
+          <h3 className='font-bold text-sm  lg:text-xl pt-6'>Контакти</h3>
           <div className='text-xs leading-4 lg:text-sm lg:leading-[22px] pt-4'>
             {
               dataContacts && dataContacts.map(contact => (
@@ -43,7 +43,7 @@ export const Footer = () => {
         </div>
 
         <div className=' w-[129px] lg:w-[184px]'>
-          <h3 className='font-bold text-base  lg:text-xl pt-6'>Соціальні мережі</h3>
+          <h3 className='font-bold text-sm  lg:text-xl pt-6'>Соціальні мережі</h3>
           <div className='text-xs leading-4 lg:text-sm lg:leading-[22px] pt-4'>
             {
               dataSocialMedia && dataSocialMedia.map(social => (
