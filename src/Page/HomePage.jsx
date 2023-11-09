@@ -8,6 +8,7 @@ import { PartnersSection } from '../Components/PartnersSection'
 import { Footer } from '../Components/Footer'
 
 export const HomePage = () => {
+  
   return (
     <>
       <MainSection/>
@@ -16,7 +17,6 @@ export const HomePage = () => {
       <NewsSection/>
       <SupportSection/>
       <PartnersSection />
-      <Footer />
     </>
   )
 }

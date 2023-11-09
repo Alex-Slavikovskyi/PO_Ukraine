@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const ShowMore = ({ text, onClick, showAll }) => {
+export const ShowMore = ({ text, onClick, showAll, className, newsId }) => {
   return (
-    <div className='flex items-end cursor-pointer'
-      onClick={onClick}
+    <div className={`flex items-end cursor-pointer ${className}`}
+      onClick={() => onClick(newsId)}
     >
       <p className='text-xs lg:text-sm leading-3 lg:leading-4 pr-2 font-bold text-[#0C5AB5]'>{text}</p>
-      <div className='h-4 w-4 '>
+      <div className='h-3 w-3 md:h-4 md:w-4 '>
       {
         !showAll ? (
           <img  src='./img/arrow-diagonal-down.svg' />

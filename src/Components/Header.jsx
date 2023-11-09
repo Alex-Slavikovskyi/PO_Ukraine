@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Container } from './Container'
 import { BtnHeader } from '../UI/BtnHeader';
 import { dataHederTabs } from '../data/dataHederTabs';
+import { BurgerMenu } from './BurgerMenu';
 
 export const Header = () => {
 
@@ -23,27 +24,34 @@ export const Header = () => {
   };
   // ---------------------
 
- 
 
-  const [activeButton, setActiveButton] = useState(null); 
+
+  const [activeButton, setActiveButton] = useState(null);
 
   const handleButtonClick = (index) => {
     if (index === activeButton) {
-      setActiveButton(null); 
+      setActiveButton(null);
     } else {
       setActiveButton(index);
     }
   };
 
   return (
-    <Container className="pl-6 pr-[34px]">
-      <div className='flex items-center justify-between text-xs lg:text-sm'>
+    <Container className="md:pl-6 md:pr-[34px]">
+      <div className='relative flex items-center justify-between text-xs lg:text-sm'>
 
-        <Link to="/" className='w-[90px] lg:w-[120px] hover:cursor-pointer flex items-center'>
-          <img src='./img/logo_ukr.svg' />
+        <BurgerMenu
+          dataHederTabs={dataHederTabs}
+          handleButtonClick={handleButtonClick}
+          isActive={activeButton}
+          activeButton={activeButton}
+        />
+
+        <Link to="/" className='w-[62px] md:w-[90px] lg:w-[120px] hover:cursor-pointer flex items-center'>
+          <img src='../img/logo_ukr.svg' />
         </Link>
 
-        <div className='flex font-semibold gap-5'>
+        <div className='hidden md:flex font-semibold gap-5 '>
           {dataHederTabs.map((button, index) => (
             <BtnHeader
               key={index}
@@ -56,13 +64,13 @@ export const Header = () => {
         </div>
 
         <div className='relative inline-block'>
-          <button className='flex items-center p-[10px] cursor-pointer' onClick={toggleDropdownLanguage}>
-            <img className='pr-2' src='./img/logo_language.svg' alt='Language Icon' />
+          <button className='flex items-center cursor-pointer' onClick={toggleDropdownLanguage}>
+            <img className='pr-2' src='../img/logo_language.svg' alt='Language Icon' />
             <p className='pr-2.5'>{language}</p>
             {!isDropdownLanguage ? (
-              <img className=' w-[12px] lg:w-[16px]' src='./img/Vector-down.svg' alt='Dropdown Icon' />
+              <img className=' w-[12px] lg:w-[16px]' src='../img/Vector-down.svg' alt='Dropdown Icon' />
             ) : (
-              <img className='w-[12px] lg:w-[16px] ' src='./img/Vector-up.svg' alt='Dropdown Icon' />
+              <img className='w-[12px] lg:w-[16px] ' src='../img/Vector-up.svg' alt='Dropdown Icon' />
             )}
           </button>
 

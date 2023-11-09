@@ -10,15 +10,17 @@ export const AboutSection = () => {
     const newColor = btnActive === '#F7BF2F' ? '#0C5AB5' : '#F7BF2F';
     setBtnActive(newColor);
   }
-  
+
   return (
-    <Container id='about' className='flex pt-[93px] justify-between items-center'>
-      <div className='h-[340px] w-[340px] lg:h-[480px] lg:w-[480px]'>
+    <Container id='about' className='md:flex pt-[56px] md:pt-[93px] justify-between items-center'>
+      <h2 className='md:hidden font-bold text-lg leading-6 text-[#0C5AB5] font-Merriweather pb-[20px]'>Про нас</h2>
+
+      <div className=' w-[270px] md:w-[340px] lg:w-[480px] h-[270px] md:h-[340px] lg:h-[480px] '>
         <img src='./img/img_aboutSection.png' />
       </div>
 
-      <div className='w-[340px] lg:w-[576px] '>
-        <h2  className='font-bold text-[22px] lg:text-[32px] text-[#0C5AB5] font-Merriweather'>Про нас</h2>
+      <div className='md:w-[340px] lg:w-[576px] '>
+        <h2 className='hidden md:block font-bold text-[22px] lg:text-[32px] text-[#0C5AB5] font-Merriweather'>Про нас</h2>
 
         <div className="pt-[20px] lg:pt-[60px] ">
           <TextAboutSection>
@@ -33,10 +35,15 @@ export const AboutSection = () => {
         </div>
 
 
-        <Button text="Приєднатись до нас" type="mainBtn" onClick={hendleClick} btnActive={btnActive} />
+        <Button 
+        className="mt-[32px] lg:mt-[62px]"
+        text="Приєднатись до нас" 
+        type="mainBtn" 
+        onClick={hendleClick} 
+        btnActive={btnActive} />
       </div>
       {/* <div className="bg-[url('./img/maps.png')]" > */}
-        {/* <img src='./img/maps.png'/> */}
+      {/* <img src='./img/maps.png'/> */}
       {/* </div> */}
     </Container>
   )

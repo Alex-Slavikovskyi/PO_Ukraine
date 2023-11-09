@@ -10,19 +10,24 @@ export const MainSection = () => {
     setBtnActive(newColor);
   }
   return (
-    <div className='pb-[140px]'>
-      <div className="bg-[url('./img/baner_mainSection.png')] bg-cover  h-[466px] lg:h-[740px] w-full ">
-      <Container className="">
-        <div className='ml-[80px] lg:ml-[72xpx] pt-[42px] lg:pt-[140px]'>
-          <h4 className='font-semibold text-white text-base lg:text-lg lg:leading-[25px]'>Громадська організація “Стала Україна”</h4>
-          <h1 className='font-bold text-[32px] lg:text-[50px] leading-[44px] lg:leading-[70px] w-[351px] lg:w-[606px] text-white mt-4'>Працюємо разом над зростанням, розвитком та відновленням</h1>
-          <Button
-            text="Допомогти нам"
-            type="mainBtn"
-            onClick={hendleClick}
-            btnActive={btnActive} />
+    <div className='md:pb-[140px]'>
+      <div className="bg-[url('./img/baner_mainSection.png')] bg-cover bg-center h-[512px] md:h-[466px] lg:h-[740px] w-screen ">
+        <Container className="">
+          <div className='md:ml-[80px] lg:ml-[72xpx] pt-[42px] lg:pt-[140px]'>
+            <h4 className='font-semibold text-white text-xs md:text-base lg:text-lg leading-4 md:leading-[22px] lg:leading-[25px]'>
+              Громадська організація “Стала Україна”
+            </h4>
+            <h1 className='font-bold text-2xl md:text-[32px] lg:text-[50px] leading-[34px] md:leading-[44px] lg:leading-[70px] md:w-[351px] lg:w-[606px] text-white mt-4'>
+              Працюємо разом над зростанням, розвитком та відновленням
+            </h1>
+            <Button
+              className="mt-[214px] md:mt-8 lg:mt-10"
+              text="Допомогти нам"
+              type="mainBtn"
+              onClick={hendleClick}
+              btnActive={btnActive} />
 
-        </div>
+          </div>
         </Container>
       </div>
     </div>

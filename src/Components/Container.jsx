@@ -6,7 +6,7 @@ export const Container = ({ children, className, id }) => {
       id={id}
       className={
         className +
-        ` px-[34px] lg:px-[46px] xl:w-[1220px] lg:mx-auto`
+        ` px-[26px] md:px-[34px] lg:px-[46px] xl:w-[1220px] lg:mx-auto`
       }
     >
       {children}

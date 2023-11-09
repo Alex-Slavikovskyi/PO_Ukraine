@@ -12,12 +12,12 @@ export const Footer = () => {
   return (
     <div>
       <div>
-        <img src='./img/baner-footer.png' className='w-full bg-cover' />
+        <img src='../img/baner-footer.png' className='w-full bg-cover bg-center'  />
       </div>
 
-      <Container className="flex justify-between pb-8">
-        <Link to="/" className='w-[78px] lg:w-[168px] hover:cursor-pointer flex items-center'>
-          <img src='./img/logo_ukr.svg' />
+      <Container className="md:flex justify-between pb-8">
+        <Link to="/" className='w-[124px] md:w-[78px] lg:w-[168px] hover:cursor-pointer flex items-center mt-[32px]'>
+          <img src='../img/logo_ukr.svg' />
         </Link>
 
         <div className='w-[141px] lg:w-[202px] '>
@@ -31,7 +31,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className=' w-[264px] lg:w-[305px]'>
+        <div className=' md:w-[264px] lg:w-[305px]'>
           <h3 className='font-bold text-sm  lg:text-xl pt-6'>Контакти</h3>
           <div className='text-xs leading-4 lg:text-sm lg:leading-[22px] pt-4'>
             {
