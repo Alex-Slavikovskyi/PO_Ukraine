@@ -26,7 +26,7 @@ export const NewsSection = () => {
         </p>
 
         <ShowMore
-          className="pt-[16px]"
+          className="pt-[16px] hidden md:flex"
           text="Дивитись усі"
           onClick={toggleShowAll}
           showAll={showAll}
