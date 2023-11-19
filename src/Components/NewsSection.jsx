@@ -1,12 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from './Container'
-import { dataCardNews } from '../data/dataCardNews'
-import { CardNews } from './CardNews'
-import { ShowMore } from '../UI/ShowMore'
-import { CardSlider } from './CardSlider'
+// import { dataCardNews } from '../data/dataCardNews';
+import { dataCardNewsEn } from '../locales/en/dataCardNewsEn';
+import { dataCardNewsUk } from '../locales/uk/dataCardNewsUk'
+import { CardNews } from './CardNews';
+import { ShowMore } from '../UI/ShowMore';
+import { CardSlider } from './CardSlider';
+import { useTranslation } from 'react-i18next';
+
 
 export const NewsSection = () => {
+  const { t, i18n } = useTranslation();
   const [showAll, setShowAll] = useState(false);
+  const dataCardNews = i18n.language === 'en' ? dataCardNewsEn : dataCardNewsUk;
+
+  console.log(t());
+  console.log(i18n.language);
 
   const visibleCards = showAll ? dataCardNews : dataCardNews.slice(0, 3);
 

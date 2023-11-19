@@ -10,7 +10,7 @@ export const MainSection = () => {
     setBtnActive(newColor);
   }
   return (
-    <div className='md:pb-[140px]'>
+    <div className='md:pb-[140px] pt-[56px] md:pt-[90px] lg:pt-[120px]'>
       <div className="bg-[url('./img/baner_mainSection.png')] bg-cover bg-center h-[512px] md:h-[466px] lg:h-[740px] w-screen ">
         <Container className="">
           <div className='md:ml-[80px] lg:ml-[72xpx] pt-[42px] lg:pt-[140px]'>

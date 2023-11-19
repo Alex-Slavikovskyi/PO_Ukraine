@@ -4,22 +4,26 @@ import { Container } from './Container'
 import { BtnHeader } from '../UI/BtnHeader';
 import { dataHederTabs } from '../data/dataHederTabs';
 import { BurgerMenu } from './BurgerMenu';
+import { useTranslation } from 'react-i18next';
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
 
   //language
   const [isDropdownLanguage, setIsDropdownLanguage] = useState(false);
   const userLanguage = navigator.language || navigator.userLanguage;
   const primaryLanguage = userLanguage.split('-')[0];
 
-  const [language, setLanguage] = useState(primaryLanguage === "uk" ? "UKR" : "ENG");
+  const [language, setLanguage] = useState(i18n.language === "uk" ? "UKR" : "ENG");
 
   const toggleDropdownLanguage = () => {
     setIsDropdownLanguage(!isDropdownLanguage);
+    
   };
 
   const changeLanguage = (newLanguage) => {
     setLanguage(newLanguage);
+    newLanguage === "UKR" ? i18n.changeLanguage('uk') : i18n.changeLanguage('en');
     setIsDropdownLanguage(false);
   };
   // ---------------------
@@ -37,7 +41,8 @@ export const Header = () => {
   };
 
   return (
-    <Container className="md:pl-6 md:pr-[34px]">
+    <Container className="md:pl-6 md:pr-[34px] fixed w-full bg-white ">
+    
       <div className='relative flex items-center justify-between text-xs lg:text-sm'>
 
         <BurgerMenu
